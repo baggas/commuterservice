@@ -1,0 +1,20 @@
+{
+    "Property1": 
+       {
+          "SourcePropertyName": "ItemCode",
+          "TargetPropertyName":"",
+          "PropertyValue":"",
+          "SourceDataType": "Alpha",
+          "TargetDataType": "text",
+          "IsRequired":"true"
+       },
+       "Property2": 
+       {
+          "SourcePropertyName": "Type",
+          "TargetPropertyName":"",
+          "PropertyValue":"",
+          "SourceDataType": "Alpha",
+          "TargetDataType": "text",
+          "IsRequired":"false"
+       }
+}

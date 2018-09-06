@@ -1,0 +1,983 @@
+{
+    "@Table": "OITM",
+    "Property": [
+       {
+          "PropertyName": "ItemCode",
+          "Alias": "ItemCode",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Item No."
+       },
+       {
+          "PropertyName": "ItemName",
+          "Alias": "ItemName",
+          "Type": "Alpha",
+          "Size": "100",
+          "Description": "Item Description"
+       },
+       {
+          "PropertyName": "ForeignName",
+          "Alias": "FrgnName",
+          "Type": "Alpha",
+          "Size": "100",
+          "Description": "Description in Foreign Lang."
+       },
+       {
+          "PropertyName": "ItemsGroupCode",
+          "Alias": "ItmsGrpCod",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Item Group"
+       },
+       {
+          "PropertyName": "CustomsGroupCode",
+          "Alias": "CstGrpCode",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Customs Group"
+       },
+       {
+          "PropertyName": "SalesVATGroup",
+          "Alias": "VatGourpSa",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Sales Tax Definition"
+       },
+       {
+          "PropertyName": "BarCode",
+          "Alias": "CodeBars",
+          "Type": "Alpha",
+          "Size": "16",
+          "Description": "Bar Code"
+       },
+       {
+          "PropertyName": "VatLiable",
+          "Alias": "VATLiable",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Tax Definition"
+       },
+       {
+          "PropertyName": "PurchaseItem",
+          "Alias": "PrchseItem",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Purchase Item [Yes/No]"
+       },
+       {
+          "PropertyName": "SalesItem",
+          "Alias": "SellItem",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Sales Item [Yes/No]"
+       },
+       {
+          "PropertyName": "InventoryItem",
+          "Alias": "InvntItem",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Inventory Item [Yes/No]"
+       },
+       {
+          "PropertyName": "IncomeAccount",
+          "Alias": "IncomeAcct",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Revenue Account"
+       },
+       {
+          "PropertyName": "ExemptIncomeAccount",
+          "Alias": "ExmptIncom",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Exempt Revenue Account"
+       },
+       {
+          "PropertyName": "ExpanseAccount",
+          "Alias": "ExpensAcct",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Expense Account"
+       },
+       {
+          "PropertyName": "Mainsupplier",
+          "Alias": "CardCode",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Preferred Vendor"
+       },
+       {
+          "PropertyName": "SupplierCatalogNo",
+          "Alias": "SuppCatNum",
+          "Type": "Alpha",
+          "Size": "17",
+          "Description": "Mfr Catalog No."
+       },
+       {
+          "PropertyName": "PurchaseUnit",
+          "Alias": "BuyUnitMsr",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Purchasing UoM"
+       },
+       {
+          "PropertyName": "PurchaseItemsPerUnit",
+          "Alias": "NumInBuy",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "No. of Items per Purchase Unit"
+       },
+       {
+          "PropertyName": "DesiredInventory",
+          "Alias": "ReorderQty",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Pref. Qty in Purchase Units"
+       },
+       {
+          "PropertyName": "MinInventory",
+          "Alias": "MinLevel",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Minimum Inventory Level"
+       },
+       {
+          "PropertyName": "SalesUnit",
+          "Alias": "SalUnitMsr",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Sales UoM"
+       },
+       {
+          "PropertyName": "SalesItemsPerUnit",
+          "Alias": "NumInSale",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "No. of Items per Sales Unit"
+       },
+       {
+          "PropertyName": "Picture",
+          "Alias": "PicturName",
+          "Type": "Alpha",
+          "Size": "200",
+          "Description": "Picture"
+       },
+       {
+          "PropertyName": "User_Text",
+          "Alias": "UserText",
+          "Type": "Memo",
+          "Size": "10",
+          "Description": "Item Remarks"
+       },
+       {
+          "PropertyName": "SerialNum",
+          "Alias": "SerialNum",
+          "Type": "Alpha",
+          "Size": "17",
+          "Description": "Serial Number"
+       },
+       {
+          "PropertyName": "CommissionPercent",
+          "Alias": "CommisPcnt",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "% Commission for Item"
+       },
+       {
+          "PropertyName": "CommissionSum",
+          "Alias": "CommisSum",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Total Commission for Item"
+       },
+       {
+          "PropertyName": "CommissionGroup",
+          "Alias": "CommisGrp",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Commission Group"
+       },
+       {
+          "PropertyName": "TreeType",
+          "Alias": "TreeType",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "BOM Type"
+       },
+       {
+          "PropertyName": "AssetItem",
+          "Alias": "AssetItem",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Fixed Assets"
+       },
+       {
+          "PropertyName": "SalesUnitHeight",
+          "Alias": "SHeight1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Height 1 - Sales Unit"
+       },
+       {
+          "PropertyName": "SalesUnitVolume",
+          "Alias": "SVolume",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Volume - Sales Unit"
+       },
+       {
+          "PropertyName": "DataExportCode",
+          "Alias": "ExportCode",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Data Export Code"
+       },
+       {
+          "PropertyName": "OITM",
+          "Description": []
+       },
+       {
+          "PropertyName": "PriceList",
+          "Description": []
+       },
+       {
+          "PropertyName": "Manufacturer",
+          "Alias": "FirmCode",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Manufacturer"
+       },
+       {
+          "PropertyName": "QuantityOnStock",
+          "Alias": "OnHand",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "In Stock"
+       },
+       {
+          "PropertyName": "QuantityOrderedFromVendors",
+          "Alias": "OnOrder",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Qty Ordered from Vendors"
+       },
+       {
+          "PropertyName": "QuantityOrderedByCustomers",
+          "Alias": "IsCommited",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Qty Ordered by Customers"
+       },
+       {
+          "PropertyName": "ManageSerialNumbers",
+          "Alias": "ManSerNum",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Serial No. Management"
+       },
+       {
+          "PropertyName": "ManageBatchNumbers",
+          "Alias": "ManBtchNum",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Manage Batch No. [Yes/No]"
+       },
+       {
+          "PropertyName": "Valid",
+          "Alias": "validFor",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Active"
+       },
+       {
+          "PropertyName": "ValidFrom",
+          "Alias": "validFrom",
+          "Type": "Date",
+          "Size": "8",
+          "Description": "Active From"
+       },
+       {
+          "PropertyName": "ValidTo",
+          "Alias": "validTo",
+          "Type": "Date",
+          "Size": "8",
+          "Description": "Active To"
+       },
+       {
+          "PropertyName": "ValidRemarks",
+          "Alias": "ValidComm",
+          "Type": "Alpha",
+          "Size": "30",
+          "Description": "Active Remarks"
+       },
+       {
+          "PropertyName": "Frozen",
+          "Alias": "frozenFor",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Inactive"
+       },
+       {
+          "PropertyName": "FrozenFrom",
+          "Alias": "frozenFrom",
+          "Type": "Date",
+          "Size": "8",
+          "Description": "Inactive From"
+       },
+       {
+          "PropertyName": "FrozenTo",
+          "Alias": "frozenTo",
+          "Type": "Date",
+          "Size": "8",
+          "Description": "Inactive To"
+       },
+       {
+          "PropertyName": "FrozenRemarks",
+          "Alias": "FrozenComm",
+          "Type": "Alpha",
+          "Size": "30",
+          "Description": "Inactive Remarks"
+       },
+       {
+          "PropertyName": "SalesPackagingUnit",
+          "Alias": "SalPackMsr",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Sales Pack"
+       },
+       {
+          "PropertyName": "SalesQtyPerPackUnit",
+          "Alias": "SalPackUn",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Packaging UoM (Sales)"
+       },
+       {
+          "PropertyName": "SalesUnitLength",
+          "Alias": "SLength1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Length 1 - Sales Unit"
+       },
+       {
+          "PropertyName": "SalesUnitWidth",
+          "Alias": "SWidth1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Width 1 - Sales Unit"
+       },
+       {
+          "PropertyName": "SalesVolumeUnit",
+          "Alias": "SVolUnit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Volume - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesUnitWeight",
+          "Alias": "SWeight1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Weight 1 - Sales Unit"
+       },
+       {
+          "PropertyName": "PurchasePackagingUnit",
+          "Alias": "PurPackMsr",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Packaging UoM (Purchasing)"
+       },
+       {
+          "PropertyName": "PurchaseQtyPerPackUnit",
+          "Alias": "PurPackUn",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Quantity per Packaging UoM"
+       },
+       {
+          "PropertyName": "PurchaseUnitLength",
+          "Alias": "BLength1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Length 1 - Purchase Unit"
+       },
+       {
+          "PropertyName": "PurchaseUnitWidth",
+          "Alias": "BWidth1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Width 1 - Purchasing Unit"
+       },
+       {
+          "PropertyName": "PurchaseUnitHeight",
+          "Alias": "BHeight1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Height 1 - Purchasing Unit"
+       },
+       {
+          "PropertyName": "PurchaseUnitVolume",
+          "Alias": "BVolume",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Quantity - Purchasing Unit"
+       },
+       {
+          "PropertyName": "PurchaseVolumeUnit",
+          "Alias": "BVolUnit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Volume - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseUnitWeight",
+          "Alias": "BWeight1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Weight 1 - Purchasing Unit"
+       },
+       {
+          "PropertyName": "PurchaseVATGroup",
+          "Alias": "VatGroupPu",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Purchase Tax Definition"
+       },
+       {
+          "PropertyName": "SalesFactor1",
+          "Alias": "SalFactor1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Sales Factor 1"
+       },
+       {
+          "PropertyName": "SalesFactor2",
+          "Alias": "SalFactor2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Sales Factor 2"
+       },
+       {
+          "PropertyName": "SalesFactor3",
+          "Alias": "SalFactor3",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Sales Factor 3"
+       },
+       {
+          "PropertyName": "SalesFactor4",
+          "Alias": "SalFactor4",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Sales Factor 4"
+       },
+       {
+          "PropertyName": "PurchaseFactor1",
+          "Alias": "PurFactor1",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Purchasing Factor 1"
+       },
+       {
+          "PropertyName": "PurchaseFactor2",
+          "Alias": "PurFactor2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Purchasing Factor 2"
+       },
+       {
+          "PropertyName": "PurchaseFactor3",
+          "Alias": "PurFactor3",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Purchasing Factor 3"
+       },
+       {
+          "PropertyName": "PurchaseFactor4",
+          "Alias": "PurFactor4",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Purchasing Factor 4"
+       },
+       {
+          "PropertyName": "MovingAveragePrice",
+          "Alias": "AvgPrice",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Item Cost"
+       },
+       {
+          "PropertyName": "SalesLengthUnit",
+          "Alias": "SLen1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Length 1 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesWidthUnit",
+          "Alias": "SWdth1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Width 1 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesHeightUnit",
+          "Alias": "SHght1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Height 1 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesWeightUnit",
+          "Alias": "SWght1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Weight 1 - UoM for Sales"
+       },
+       {
+          "PropertyName": "PurchaseWidthUnit",
+          "Alias": "BWdth1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Width 1 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseLengthUnit",
+          "Alias": "BLen1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Length 1 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseHeightUnit",
+          "Alias": "BHght1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Height 1 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseWeightUnit",
+          "Alias": "BWght1Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Weight 1 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "ForeignRevenuesAccount",
+          "Alias": "FrgnInAcct",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Revenue Account - Foreign"
+       },
+       {
+          "PropertyName": "ECRevenuesAccount",
+          "Alias": "ECInAcct",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Revenue Account - EU"
+       },
+       {
+          "PropertyName": "ForeignExpensesAccount",
+          "Alias": "FrgnExpAcc",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Expense Account - Foreign"
+       },
+       {
+          "PropertyName": "ECExpensesAccount",
+          "Alias": "ECExpAcc",
+          "Type": "Alpha",
+          "Size": "15",
+          "Description": "Expense Account - EU"
+       },
+       {
+          "PropertyName": "AvgStdPrice",
+          "Alias": "AvgPrice",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Item Cost"
+       },
+       {
+          "PropertyName": "DefaultWarehouse",
+          "Alias": "DfltWH",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Default Warehouse"
+       },
+       {
+          "PropertyName": "ShipType",
+          "Alias": "ShipType",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Shipping Type"
+       },
+       {
+          "PropertyName": "GLMethod",
+          "Alias": "GLMethod",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Set G/L Account by"
+       },
+       {
+          "PropertyName": "TaxType",
+          "Alias": "TaxType",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Tax Type"
+       },
+       {
+          "PropertyName": "WhsInfo",
+          "Description": []
+       },
+       {
+          "PropertyName": "MaxInventory",
+          "Alias": "MaxLevel",
+          "Type": "Binary",
+          "Size": "8",
+          "Description": "Maximum Inventory Level"
+       },
+       {
+          "PropertyName": "ManageStockByWarehouse",
+          "Alias": "ByWh",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Inventory Management by Whse"
+       },
+       {
+          "PropertyName": "PurchaseHeightUnit1",
+          "Alias": "BHght2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Height 2 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseUnitHeight1",
+          "Alias": "BHeight2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Height 2 - Purchasing Unit"
+       },
+       {
+          "PropertyName": "PurchaseLengthUnit1",
+          "Alias": "BLen2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Length 2 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseUnitLength1",
+          "Alias": "Blength2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Length 2 - Purchase Unit"
+       },
+       {
+          "PropertyName": "PurchaseWeightUnit1",
+          "Alias": "BWght2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Weight 2 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseUnitWeight1",
+          "Alias": "BWeight2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Weight 2 - Purchasing Unit"
+       },
+       {
+          "PropertyName": "PurchaseWidthUnit1",
+          "Alias": "BWdth2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Width 2 - UoM for Purchasing"
+       },
+       {
+          "PropertyName": "PurchaseUnitWidth1",
+          "Alias": "BWidth2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Width 2 - Purchasing Unit"
+       },
+       {
+          "PropertyName": "SalesHeightUnit1",
+          "Alias": "SHght2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Height 2 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesUnitHeight1",
+          "Alias": "SHeight2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Height 2 - Sales Unit"
+       },
+       {
+          "PropertyName": "SalesLengthUnit1",
+          "Alias": "SLen2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Length 2 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesUnitLength1",
+          "Alias": "Slength2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Length 2 - Sales Unit"
+       },
+       {
+          "PropertyName": "SalesWeightUnit1",
+          "Alias": "SWght2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Weight 2 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesUnitWeight1",
+          "Alias": "SWeight2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Weight 2 - Sales Unit"
+       },
+       {
+          "PropertyName": "SalesWidthUnit1",
+          "Alias": "SWdth2Unit",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Width 2 - UoM for Sales"
+       },
+       {
+          "PropertyName": "SalesUnitWidth1",
+          "Alias": "SWidth2",
+          "Type": "Binary",
+          "Size": "20",
+          "Description": "Width 2 - Sales Unit"
+       },
+       {
+          "PropertyName": "ForceSelectionOfSerialNumber",
+          "Alias": "BlockOut",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Force selection of serial no."
+       },
+       {
+          "PropertyName": "ManageSerialNumbersOnReleaseOnly",
+          "Alias": "ManOutOnly",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Manage SN Only on Exit"
+       },
+       {
+          "PropertyName": "WTLiable",
+          "Alias": "WTLiable",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "WTax Liable"
+       },
+       {
+          "PropertyName": "BaseUnitName",
+          "Alias": "BaseUnit",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Base Unit Name"
+       },
+       {
+          "PropertyName": "ItemCountryOrg",
+          "Alias": "CountryOrg",
+          "Type": "Alpha",
+          "Size": "3",
+          "Description": "Country of Origin"
+       },
+       {
+          "PropertyName": "SWW",
+          "Alias": "SWW",
+          "Type": "Alpha",
+          "Size": "16",
+          "Description": "Additional Identifier"
+       },
+       {
+          "PropertyName": "ApTaxCode",
+          "Alias": "TaxCodeAP",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Tax Code (A/P)"
+       },
+       {
+          "PropertyName": "ArTaxCode",
+          "Alias": "TaxCodeAR",
+          "Type": "Alpha",
+          "Size": "8",
+          "Description": "Tax Code (A/R)"
+       },
+       {
+          "PropertyName": "CostAccountingMethod",
+          "Alias": "EvalSystem",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Valuation Method"
+       },
+       {
+          "PropertyName": "WarrantyTemplate",
+          "Alias": "WarrntTmpl",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Warranty Template"
+       },
+       {
+          "PropertyName": "IndirectTax",
+          "Alias": "IndirctTax",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Indirect Tax"
+       },
+       {
+          "PropertyName": "IssueMethod",
+          "Alias": "IssueMthd",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Issue Method"
+       },
+       {
+          "PropertyName": "SRIAndBatchManageMethod",
+          "Alias": "MngMethod",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Management Method"
+       },
+       {
+          "PropertyName": "IsPhantom",
+          "Alias": "Phantom",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Phantom Item"
+       },
+       {
+          "PropertyName": "InventoryUOM",
+          "Alias": "InvntryUom",
+          "Type": "Alpha",
+          "Size": "20",
+          "Description": "Inventory UoM"
+       },
+       {
+          "PropertyName": "PlanningSystem",
+          "Alias": "PlaningSys",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Planning Method"
+       },
+       {
+          "PropertyName": "ProcurementMethod",
+          "Alias": "PrcrmntMtd",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Procurement Method"
+       },
+       {
+          "PropertyName": "OrderIntervals",
+          "Alias": "OrdrIntrvl",
+          "Type": "Numeric",
+          "Size": "6",
+          "Description": "Order Intervals"
+       },
+       {
+          "PropertyName": "OrderMultiple",
+          "Alias": "OrdrMulti",
+          "Type": "Binary",
+          "Size": "8",
+          "Description": "Order Multiple"
+       },
+       {
+          "PropertyName": "LeadTime",
+          "Alias": "LeadTime",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "Lead Time"
+       },
+       {
+          "PropertyName": "MinOrderQuantity",
+          "Alias": "MinOrdrQty",
+          "Type": "Binary",
+          "Size": "8",
+          "Description": "Minimum Order Quantity"
+       },
+       {
+          "PropertyName": "ItemType",
+          "Alias": "ItemType",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Item Type"
+       },
+       {
+          "PropertyName": "ItemClass",
+          "Alias": "ItemClass",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Service or Material"
+       },
+       {
+          "PropertyName": "OutgoingServiceCode",
+          "Alias": "OSvcCode",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "Outgoing Service Code"
+       },
+       {
+          "PropertyName": "IncomingServiceCode",
+          "Alias": "ISvcCode",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "Incoming Service Code"
+       },
+       {
+          "PropertyName": "ServiceGroup",
+          "Alias": "ServiceGrp",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "Service Group"
+       },
+       {
+          "PropertyName": "NCMCode",
+          "Alias": "NCMCode",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "NCM Code"
+       },
+       {
+          "PropertyName": "MaterialType",
+          "Alias": "MatType",
+          "Type": "Alpha",
+          "Size": "3",
+          "Description": "Material Type"
+       },
+       {
+          "PropertyName": "MaterialGroup",
+          "Alias": "MatGrp",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "Material Group"
+       },
+       {
+          "PropertyName": "ProductSource",
+          "Alias": "ProductSrc",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Product Source"
+       },
+       {
+          "PropertyName": "AutoCreateSerialNumbersOnRelease",
+          "Alias": "ManOutOnly",
+          "Type": "Alpha",
+          "Size": "1",
+          "Description": "Manage SN Only on Exit"
+       },
+       {
+          "PropertyName": "DNFEntry",
+          "Alias": "DNFEntry",
+          "Type": "Numeric",
+          "Size": "11",
+          "Description": "DNF Code Entry"
+       }
+    ]
+ }
