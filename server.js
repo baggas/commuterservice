@@ -13,7 +13,7 @@ app.get('/getItemMetadata', function (req, res) {
    });
 })
 app.get('/getItems', function (req, res) {
-    Request.get("http://192.168.9.63:8080/Items", (error, response, body) => {
+    Request.get("http://192.168.9.175:8080/Items", (error, response, body) => {
     if(error) {
         return console.dir(error);
     }
